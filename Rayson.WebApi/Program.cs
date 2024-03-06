@@ -1,4 +1,7 @@
 using Microsoft.OpenApi.Models;
+using Rayson.BusinessInterface;
+using Rayson.BusinessService;
+using Rayson.WebApi.Utility.InitDataBaseExtension;
 using Rayson.WebApi.Utility.SwaggerExtension;
 
 namespace Rayson.WebApi
@@ -14,12 +17,23 @@ namespace Rayson.WebApi
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
+
             var builder = WebApplication.CreateBuilder(args);
+
+            //项目首次启动要初始化数据库
+            if (builder.Configuration["IsInitDB"] =="1")
+            {
+                builder.InitDataBase();
+            }
+
+            builder.AddInitSqlSugar();
+            builder.Services.AddTransient<IUserService, UserService>();
+
+
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.AddSwaggerExtension();
-
 
 
 

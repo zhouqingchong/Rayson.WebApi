@@ -21,7 +21,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.4.144-preview20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rayson.BusinessInterface\Rayson.BusinessInterface.csproj" />
+    <ProjectReference Include="..\Rayson.BusinessService\Rayson.BusinessService.csproj" />
+    <ProjectReference Include="..\Rayson.Models\Rayson.Models.csproj" />
   </ItemGroup>
 
 </Project>
