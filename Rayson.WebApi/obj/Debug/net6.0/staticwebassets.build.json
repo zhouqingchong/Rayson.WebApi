@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kLk2kYIwkqxqaAnyNZwI6TvjNTArfNj6o4gPUf4QFrs=",
+  "Source": "Rayson.WebApi",
+  "BasePath": "_content/Rayson.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
