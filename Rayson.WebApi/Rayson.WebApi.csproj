@@ -20,14 +20,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
-    <PackageReference Include="SqlSugarCore" Version="5.1.4.144-preview20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Rayson.BusinessInterface\Rayson.BusinessInterface.csproj" />
     <ProjectReference Include="..\Rayson.BusinessService\Rayson.BusinessService.csproj" />
+    <ProjectReference Include="..\Rayson.Common\Rayson.Common.csproj" />
+    <ProjectReference Include="..\Rayson.Models.DTO\Rayson.Models.DTO.csproj" />
     <ProjectReference Include="..\Rayson.Models\Rayson.Models.csproj" />
   </ItemGroup>
 

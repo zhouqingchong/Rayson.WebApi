@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rayson.BusinessInterface\Rayson.BusinessInterface.csproj" />
+    <ProjectReference Include="..\Rayson.Common\Rayson.Common.csproj" />
   </ItemGroup>
 
 </Project>

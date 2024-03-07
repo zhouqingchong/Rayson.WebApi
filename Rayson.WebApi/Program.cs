@@ -1,5 +1,5 @@
-using Microsoft.OpenApi.Models;
 using Rayson.BusinessInterface;
+using Rayson.BusinessInterface.MapConfig;
 using Rayson.BusinessService;
 using Rayson.WebApi.Utility.InitDataBaseExtension;
 using Rayson.WebApi.Utility.SwaggerExtension;
@@ -29,13 +29,12 @@ namespace Rayson.WebApi
             builder.AddInitSqlSugar();
             builder.Services.AddTransient<IUserService, UserService>();
 
-
-
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.AddSwaggerExtension();
 
-
+            //Automapper”≥…‰
+            builder.Services.AddAutoMapper(typeof(AutoMapperConfigs));
 
             var app = builder.Build();
 

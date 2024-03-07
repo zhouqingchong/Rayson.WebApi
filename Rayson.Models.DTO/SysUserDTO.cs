@@ -1,28 +1,24 @@
-﻿using SqlSugar;
+﻿using Rayson.Common.ValidateRules;
 
-namespace Rayson.Models.Entity
+namespace Rayson.Models.DTO
 {
-    /// <summary>
-    /// 用户信息
-    /// </summary>
-    [SugarTable("Sys_User")]
-    public class Sys_User: Sys_BaseModel
+    public class SysUserDTO: BaseDTO
     {
-        /// <summary>
-        /// 数据库映射主键自增
-        /// </summary>
-        [SugarColumn(ColumnName = "UserId", IsIdentity = true, IsPrimaryKey = true)]
         public int UserId { get; set; }
-        public string? UserName { get; set; }
+
+        [RaysonRequiredAttribute("用户名称不能为空")]
+        public string? Name { get; set; }
         public string? PassWord { get; set; }
         public int Status { get; set; }
         public int Sex { set; get; }
         public string Mobile { get; set; }
+        [RaysonRequiredAttribute("用户地址不能为空")]
         public string? Address { get; set; }
         public string? Email { set; get; }
+
+        [RequireIsNumActtribute("QQ号必须为数字")]
         public long QQ { set; get; }
         public string? WeChat { set; get; }
         public DateTime LastLoginTime { set; get; }
-
     }
 }

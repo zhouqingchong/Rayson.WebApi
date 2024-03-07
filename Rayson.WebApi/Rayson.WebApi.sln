@@ -5,11 +5,15 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rayson.WebApi", "Rayson.WebApi.csproj", "{37324561-BB92-4A47-B9BE-C1EDF103AFA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rayson.Models", "..\Rayson.Models\Rayson.Models.csproj", "{79618F4F-B715-4C7B-8AC6-8A3254CA0B95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rayson.Models", "..\Rayson.Models\Rayson.Models.csproj", "{79618F4F-B715-4C7B-8AC6-8A3254CA0B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rayson.BusinessService", "..\Rayson.BusinessService\Rayson.BusinessService.csproj", "{E136B20A-1345-4B51-A4E1-7D848AFBEA21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rayson.BusinessService", "..\Rayson.BusinessService\Rayson.BusinessService.csproj", "{E136B20A-1345-4B51-A4E1-7D848AFBEA21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rayson.BusinessInterface", "..\Rayson.BusinessInterface\Rayson.BusinessInterface.csproj", "{4474A90F-F0D2-46F1-B268-1C8B0AE205E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rayson.BusinessInterface", "..\Rayson.BusinessInterface\Rayson.BusinessInterface.csproj", "{4474A90F-F0D2-46F1-B268-1C8B0AE205E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rayson.Common", "..\Rayson.Common\Rayson.Common.csproj", "{37DBACD6-2BE5-44E5-B237-5EF99160AADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rayson.Models.DTO", "..\Rayson.Models.DTO\Rayson.Models.DTO.csproj", "{43E0B878-6FE3-4EFF-B4CF-ABE62606D4D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{4474A90F-F0D2-46F1-B268-1C8B0AE205E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4474A90F-F0D2-46F1-B268-1C8B0AE205E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4474A90F-F0D2-46F1-B268-1C8B0AE205E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DBACD6-2BE5-44E5-B237-5EF99160AADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DBACD6-2BE5-44E5-B237-5EF99160AADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DBACD6-2BE5-44E5-B237-5EF99160AADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DBACD6-2BE5-44E5-B237-5EF99160AADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E0B878-6FE3-4EFF-B4CF-ABE62606D4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E0B878-6FE3-4EFF-B4CF-ABE62606D4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E0B878-6FE3-4EFF-B4CF-ABE62606D4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E0B878-6FE3-4EFF-B4CF-ABE62606D4D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
